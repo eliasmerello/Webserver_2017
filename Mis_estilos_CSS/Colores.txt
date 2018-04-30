@@ -1,0 +1,16 @@
+#0099CC   bordes
+#99CCFF #A9D0F5 7D8DBC #336699  fondo
+
+________
+
+Menu
+#0066CC
+
+
+___________
+tablas
+
+#006699
+#E1EEF4
+
+#00557F

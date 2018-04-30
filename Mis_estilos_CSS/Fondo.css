@@ -1,0 +1,121 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+body {background: white;} 
+
+h1{
+color: #990000;
+font-family:"Times New Roman", Times, serif;
+font-size:24px;
+}
+
+.fecha{
+/*background: -webkit-linear-gradient(#008B8B , white);*/
+background:#008080;
+text-align: center;
+color:white;
+font-style: oblique;
+width:34%;
+height:30px; 
+padding-top:20px;
+border-radius:20px 20px 0px 0px;
+}
+.caja1{background:white;
+width: auto;
+height:100%;
+margin:0;
+padding:0;
+}
+
+.redesociales {
+width:auto;
+height:40px;
+border:0px solid #006400;
+background:#008080;
+/*background: -webkit-linear-gradient(#EEF4F9 , white);	*/ 
+padding-top:8px;
+padding-bottom:0px;
+padding-right:4px; 
+}
+
+.ima{
+background:white;
+height: 150px;
+width: auto;
+padding:5px;
+}  
+.sesion{
+background:#008080;
+width: auto;
+height:20px; 
+padding:5px;
+}
+.sesion a1{
+background:#008080;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+font-style:oblique;
+font-size:10;
+padding-left:6px;
+}
+.sesion a2{
+background:#008080;
+color:#FFFFFF;
+font-family:Arial, Helvetica, sans-serif;
+font-style:oblique;
+font-size:10;
+padding-right:6px; 
+}
+.salir{
+/*background: -webkit-linear-gradient(#EEF4F9 , white);*/
+background:#008080;;
+width: auto;
+height:20px;
+padding-top:10px;
+padding-bottom:10px;  
+padding-right:6px;
+}
+.salir a{
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+font-style:oblique;
+font-size:10;
+padding-left:350px;
+}
+
+.enlazando h1{
+/*background:#8FBC8F;*/
+background-color: #fffffa;
+;
+width: auto;
+font:Arial, Helvetica, sans-serif;
+font-style: inherit;
+color:#008080;
+font-size: 30px;
+padding:5px;
+}
+.contenedor{
+background: #FFFFFF;
+width:auto;
+height:1200px;
+padding:0px;
+margin: 0px;
+}
+.caja4{
+color:#FFFFFF;
+background:#008080;
+width: auto;
+height:46px;
+font-size:20px;
+text-align:center;
+padding-top: 20px;
+}
+p{
+margin:30px;
+color:#CCCCCC;
+font-family: "Courier New", Courier, monospace;
+font-size:22px;
+font-style:inherit;
+}

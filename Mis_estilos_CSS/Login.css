@@ -1,0 +1,83 @@
+/* CSS Document */
+
+body {background:#5F9EA0;}
+
+div{
+background:#ffffff;
+width:366px;
+height: 480px;
+margin:180px; /*Margen superior principal entre el body y el div*/
+margin-left: auto; /*Me centra el div en el body*/
+margin-right: auto; /*Me centra el div en el body*/
+padding:10px; /*Margen entre el texto o caja de texto y el margen del div*/
+border-radius:12px 12px 12px 12px;
+}
+
+p{ 
+margin-top:40px;
+margin-bottom:2px;  
+padding:0px;
+margin-left:14px;
+color:#008080;
+font-family: "Arial", monospace;
+font-size:18px;
+font-style:inherit;
+}
+
+.caja-texto {
+  border: 1px solid #DBE1EB;
+  margin-left:15px; 
+  margin-bottom:15px;
+  font-size: 16px;
+  font-family: Arial, Verdana;
+  padding-left: 68px;
+  padding-right:68px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  background: #FFFFFF;
+  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+  color: #2E3133;
+}
+
+.caja-texto:focus
+  {
+  color: #2E3133;
+  border-color: #FBFFAD;
+  }
+
+.caja-texto:hover{
+    color: green;
+    background-color:white;
+  }
+
+.btn_login{
+  margin-left:1px;
+	border: 0px solid #DBE1EB;/*Borde del boton---ninguno en mi caso*/
+  text-decoration: none; 
+  padding-left: 104px;
+	padding-right: 128px;
+	padding-top: 18px;/*Alto del boton*/
+	padding-bottom: 18px;/*Bajo del boton*/
+	font-size: 16px;
+  color:white;
+  background-color:#008080;
+  border-radius: 0px 0px 0px 0px;
+  }
+
+  .btn_login:hover{
+    color:white;
+    background-color: #DC143C;
+  }
+
+.btn_login:focus
+  {
+  color: #2E3133;
+  border-color: #FBFFAD;
+  }

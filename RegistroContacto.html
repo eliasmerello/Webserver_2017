@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Agregar_Contacto</title>
+<link rel="stylesheet" href="/Mis_estilos_CSS/Agenda/form-contact.css"> 
+</head>
+<body>
+<br>
+<h1>Crear Contacto</h1> 
+<p class="Textop">*Todos los campos son obligatorios</p> 
+
+<form id="form1" name="form1" method="post" action="Contactos.php">
+  <table>
+    <tr>
+      <td><p>Nombres:</p></td>
+      <td><input name="nombres" type="text" class="caja-texto" id="nom" size="20" maxlength="15" autofocus /></td>
+    </tr>
+
+    <tr>
+      <td><p>Apellidos:</p></td>
+      <td><input name="apellidos" type="text" class="caja-texto" id="ape" size="20" maxlength="15"  /></td>
+    </tr>
+
+    <tr>
+        <td><p>Direcci&oacute;n:</p></td>
+        <td><input name="direccion" type="text" class="caja-texto" id="dir" size="20" maxlength="30" /></td>
+    </tr>
+    <tr>
+        <td><p>Convencional:</p></td>
+        <td><input name="fijo" type="text" class="caja-texto" id="direccion" size="20" maxlength="10" placeholder="04XXXXXXX" /></td>
+    </tr>
+		<tr>
+         <td><p>Operadora:<p></td>
+          <td>
+		    <select name="ope" size="1" id="ope" class="caja-texto">
+            <option value=" " selected="selected">Seleccione...</option>
+            <option value="Claro">Claro</option>
+            <option value="Movistar">Movistar</option>
+            <option value="Twenty">Twenty</option>
+		    <option value="CNT">CNT</option>
+            <option value="Otra">Otra</option>
+            </select>
+		     </td>
+    </tr>
+		<tr>
+      <td><p>N&uacute;mero:<p></td>
+      <td><input name="num" type="text" class="caja-texto" id="mail" size="20" maxlength="10" placeholder="N&uacute;mero de celular" /></td>
+    </tr>
+    <tr>
+      <td><p>Email:</p></td>
+      <td><input name="mail" type="text" class="caja-texto" id="correo" size="20" maxlength="40" placeholder="Ej:carlos@dominio.com" /></td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="Submit" value="Guardar" />
+      <input type="reset" name="Submit22" value="Borrar" /></td>
+    </tr>
+  </table><br>
+    <p><a href="/select.php" title="Consultar datos" target="medio">Consultar Datos </a></p>
+
+</form>
+</body>
+</html>

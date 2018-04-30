@@ -1,0 +1,129 @@
+/* CSS Document */
+
+body {background: white;} 
+
+h1{
+color: #990000;
+font-family:"Times New Roman", Times, serif;
+font-size:22px;
+}
+.caja1{background:white;
+width: 90%;
+height:100%;
+margin:20px 0px;
+padding:0px;
+}
+
+.publicidad{
+background: -webkit-linear-gradient(#EEF4F9 , white);
+width: auto;
+height: 100px;
+padding:5px;
+
+}
+.redesociales {
+padding:5px;
+background: -webkit-linear-gradient(blue , white);
+border-radius:20px 20px 20px 20px; 
+padding-left:6px;	
+width:50px;
+height: 40px;
+margin-left:90%;
+border:0px solid #808080;
+}
+
+.redesociales1 {
+padding:5px;
+background: -webkit-linear-gradient(red , white);
+border-radius:20px 20px 20px 20px; 
+padding-left:6px;
+width:50px;
+height: 40px;
+margin-left:90%;
+border:0px solid #808080;
+}
+
+.ima{
+background:white;
+height: 150px;
+width: auto;
+padding:5px;
+}
+   
+.sesion{
+background:#336699;
+width: auto;
+padding:5px;
+}
+.sesion a1{
+background:#336699;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+font-style:oblique;
+font-size:10;
+padding-left:650px;
+}
+.sesion a2{
+background:#336699;
+color: #FFFFFF;
+font-family:Arial, Helvetica, sans-serif;
+font-style:oblique;
+font-size:10;
+}
+.salir{
+background: #FFFFFF;
+width: auto;
+padding:5px;
+}
+.salir a{
+color:#000099;
+font-family:Arial, Helvetica, sans-serif;
+font-style:oblique;
+font-size:10;
+padding-left:900px;
+}
+.banner{
+background: -webkit-linear-gradient(#EEF4F9 , white);
+width: auto;
+padding:5px;
+}
+.enlazando h1{
+background: orange;
+width: auto;
+font:Arial, Helvetica, sans-serif;
+font-style: inherit;
+color:#FFFFFF;
+padding:5px;
+}
+.contenedor{
+background: #FFFFFF;
+width:auto;
+height:700px;
+padding:5px;
+}
+.caja4{
+color:#FFFFFF;
+background:#336699;
+width: auto;
+height:40px;
+padding:15px;
+text-align:center;
+}
+p1{
+font-family: "Times New Roman", Times, serif;
+font-size:18px;
+}
+p{
+margin:30px;
+color:#CCCCCC;
+font-family: "Courier New", Courier, monospace;
+font-size:22px;
+font-style:inherit;
+}
+p2{
+color: #000099;
+background:#FFFFFF;
+font-family: "Courier New", Courier, monospace;
+font-size:12px;
+font-style:inherit;
+}

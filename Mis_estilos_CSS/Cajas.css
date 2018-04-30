@@ -1,0 +1,28 @@
+
+body {background: #FFFFFF}
+
+h1{
+text-align:left;
+color:#000066;
+font-family:"Times New Roman", Times, serif;
+}
+.form{
+float:left;
+background: #FFFFFF;
+width:280px;
+margin:0px 0%;
+padding:0px;
+}
+.tabla{
+width:280px;
+height:80px;
+border:3px ridge #000099 ;
+border-radius:12px 12px 12px 12px;
+}
+p{
+margin:5px;
+color: white;
+font-family: "Times New Roman", Times, serif;
+font-size:22px;
+}
+
