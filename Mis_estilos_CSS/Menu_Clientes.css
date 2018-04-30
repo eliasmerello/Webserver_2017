@@ -6,11 +6,11 @@ body{
 }
 
 header{
-width: 100%;
+margin: auto;
+width: 90%;
 overflow: hidden;
 background:#008B8B;
 /*background-color: rgb(144, 13, 29)*/
-;
 margin-bottom:20px;
 margin-top: 4px;
 }
@@ -46,7 +46,7 @@ header nav a{
 	transition:all 500ms ease;
 }
 
-header nav a:hover{
+header nav a:hover{	
 background: #f56f3a;
 border-radius: 50px;
 

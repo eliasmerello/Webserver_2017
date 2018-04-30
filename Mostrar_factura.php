@@ -1,5 +1,8 @@
+<meta http-equiv="Content-Type" content="text/html; charset= ISO-8859-1" />
 <link rel="stylesheet" href="/Mis_estilos_CSS/Tablas_1.css"> 
 <link rel="stylesheet" href="/Mis_estilos_CSS/Font/font.css"> 
+<link rel="stylesheet" href="/Mis_estilos_CSS/Agenda/form-contact.css"> 
+
 
 <?php
 session_start();
@@ -97,7 +100,7 @@ $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recor
   <td><?php echo $row_Recordset1['Mail']; ?> </td>
  </table>
  
- <table width="274" border="0">
+ <table>
  <thead>
  <tr>
     <td><strong>Cantidad</strong></td>
@@ -107,31 +110,31 @@ $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recor
   </tr>
 
  <tr>
-    <td><input name="cantidad" type="text" id="cant" maxlength="30" autofocus value="<?php echo $row_Recordset1['Cantidad']; ?>"/></td>
-    <td><input name="servicio" type="text" id="ser" size="40"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Servicio']; ?> "/></td>
-    <td><input name="valoru" type="text" id="valu"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor_Uni']; ?>" /></td>
-    <td><input name="valor" type="text" id="val"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor']; ?>" /></td>
+    <td><input name="cantidad" type="text" class="caja-texto" id="cant" maxlength="30" autofocus value="<?php echo $row_Recordset1['Cantidad']; ?>"/></td>
+    <td><input name="servicio" type="text" class="caja-texto" id="ser" size="40"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Servicio']; ?> "/></td>
+    <td><input name="valoru" type="text" class="caja-texto" id="valu"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor_Uni']; ?>" /></td>
+    <td><input name="valor" type="text" class="caja-texto" id="val"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor']; ?>" /></td>
   </tr>
 
 <tr>
-  <td><input name="cantidad1" type="text" id="cant1" maxlength="30" autofocus value="<?php echo $row_Recordset1['Cantidad1']; ?>"/></td>
-  <td><input name="servicio1" type="text" id="ser1" size="40" maxlength="30" autofocus value="<?php echo $row_Recordset1['Servicio1']; ?> "/></td>
-  <td><input name="valoru1" type="text" id="valu1"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor_Uni1']; ?>" /></td>
-  <td><input name="valor1" type="text" id="val1"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor1']; ?>" /></td>
+  <td><input name="cantidad1" type="text" class="caja-texto" id="cant1" maxlength="30" autofocus value="<?php echo $row_Recordset1['Cantidad1']; ?>"/></td>
+  <td><input name="servicio1" type="text" class="caja-texto" id="ser1" size="40" maxlength="30" autofocus value="<?php echo $row_Recordset1['Servicio1']; ?> "/></td>
+  <td><input name="valoru1" type="text" class="caja-texto" id="valu1"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor_Uni1']; ?>" /></td>
+  <td><input name="valor1" type="text" class="caja-texto" id="val1"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor1']; ?>" /></td>
 </tr>
 
 <tr>
-  <td><input name="cantidad2" type="text" id="cant2"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Cantidad2']; ?>"/></td>
-  <td><input name="servicio2" type="text" id="ser2" size="40" maxlength="30" autofocus value="<?php echo $row_Recordset1['Servicio2']; ?> "/></td>
-  <td><input name="valoru2" type="text" id="valu2"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor_Uni2']; ?>" /></td>
-  <td><input name="valor2" type="text" id="val2"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor2']; ?>" /></td>
+  <td><input name="cantidad2" type="text" class="caja-texto" id="cant2"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Cantidad2']; ?>"/></td>
+  <td><input name="servicio2" type="text" class="caja-texto" id="ser2" size="40" maxlength="30" autofocus value="<?php echo $row_Recordset1['Servicio2']; ?> "/></td>
+  <td><input name="valoru2" type="text" class="caja-texto" id="valu2"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor_Uni2']; ?>" /></td>
+  <td><input name="valor2" type="text" class="caja-texto" id="val2"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor2']; ?>" /></td>
 </tr>
 
 <tr>
-  <td><input name="cantidad3" type="text" id="cant3"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Cantidad3']; ?>"/></td>
-  <td><input name="servicio3" type="text" id="ser3" size="40" maxlength="30" autofocus value="<?php echo $row_Recordset1['Servicio3']; ?> "/></td>
-  <td><input name="valoru3" type="text" id="valu3"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor_Uni3']; ?>" /></td>
-  <td><input name="valor3" type="text" id="val3"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor3']; ?>" /></td>
+  <td><input name="cantidad3" type="text" class="caja-texto" id="cant3"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Cantidad3']; ?>"/></td>
+  <td><input name="servicio3" type="text" class="caja-texto" id="ser3" size="40" maxlength="30" autofocus value="<?php echo $row_Recordset1['Servicio3']; ?> "/></td>
+  <td><input name="valoru3" type="text" class="caja-texto" id="valu3"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor_Uni3']; ?>" /></td>
+  <td><input name="valor3" type="text" class="caja-texto" id="val3"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor3']; ?>" /></td>
 </tr>
 <thead>
 <tr>
@@ -139,7 +142,7 @@ $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recor
 </tr> 
     
 <tr>
-<td><input name="subtotal" type="text" id="sub"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Subtotal']; ?>" />
+<td><input name="subtotal" type="text" class="caja-texto" id="sub"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Subtotal']; ?>" />
 </td>
 </tr>
 
@@ -148,7 +151,7 @@ $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recor
 </tr>
     
 <tr>
-<td><input name="iva" type="text" id="iv" maxlength="30" autofocus value="<?php echo $row_Recordset1['Iva']; ?>" />
+<td><input name="iva" type="text" class="caja-texto" id="iv" maxlength="30" autofocus value="<?php echo $row_Recordset1['Iva']; ?>" />
 </td>
 </tr>
 
@@ -156,7 +159,7 @@ $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recor
 <td><strong>Total US:</strong></td>
 </tr>
 <tr>
-<td><input name="total" type="text" id="tot"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Total']; ?>" />
+<td><input name="total" type="text" class="caja-texto" id="tot"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Total']; ?>" />
 </td>
 </tr>
 <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>

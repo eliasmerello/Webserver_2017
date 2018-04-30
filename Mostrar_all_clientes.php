@@ -1,3 +1,4 @@
+<meta http-equiv="Content-Type" content="text/html; charset= ISO-8859-1" />
 <link rel="stylesheet" href="/Mis_estilos_CSS/Clientes/view-contact.css"> 
 <link rel="stylesheet" href="/Mis_estilos_CSS/Font/btn.css"> 
 
@@ -50,7 +51,7 @@ if (!empty($_SERVER['QUERY_STRING'])) {
 $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recordset1, $queryString_Recordset1);
 ?>
 <?php
-  echo "<td><a class='btn_2' title='Nuevo cliente' href='RegistroClient.php?Codigo=".$row_Recordset1["Codigo"]."'>Nuevo Cliente</a></td>";
+  echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td><a class='btn_2' title='Nuevo cliente' href='RegistroClient.php?Codigo=".$row_Recordset1["Codigo"]."'>Nuevo Cliente</a></td>";
 ?>
 <table>
   <h1>LISTA DE CLIENTES<IMG SRC="imagenes/ima1.png"></h1>  

@@ -1,5 +1,7 @@
+<meta http-equiv="Content-Type" content="text/html; charset= ISO-8859-1" />
 <link rel="stylesheet" href="/Mis_estilos_CSS/Agenda/view-contact.css"> 
 <link rel="stylesheet" href="/Mis_estilos_CSS/Font/btn.css"> 
+
 <?php
 session_start();
 if(!$_SESSION)

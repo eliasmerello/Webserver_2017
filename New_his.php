@@ -1,3 +1,5 @@
+<meta http-equiv="Content-Type" content="text/html; charset= ISO-8859-1" />
+
 <?php
      $No= $_GET['No']+1;
      $Cod= $_GET['Codigo'];

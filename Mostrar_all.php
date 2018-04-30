@@ -1,3 +1,4 @@
+<meta http-equiv="Content-Type" content="text/html; charset= ISO-8859-1" />
 <link rel="stylesheet" href="/Mis_estilos_CSS/Tablas0.css"> 
 <link rel="stylesheet" href="/Mis_estilos_CSS/Font/btn.css"> 
 
@@ -48,7 +49,8 @@ if (!empty($_SERVER['QUERY_STRING'])) {
   }
 }
 $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recordset1, $queryString_Recordset1);
-?><br><br><br>
+?>
+<br><br><br>
 <table>
 <h1>Agenda de contactos <IMG SRC="imagenes/ima1.png"></h1>
  <thead>

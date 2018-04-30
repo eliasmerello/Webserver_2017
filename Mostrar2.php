@@ -1,5 +1,7 @@
+<meta http-equiv="Content-Type" content="text/html; charset= ISO-8859-1" />
 <link rel="stylesheet" href="/Mis_estilos_CSS/Clientes/view-contact.css">
 <link rel="stylesheet" href="/Mis_estilos_CSS/Font/btn.css"> 
+
 <?php require_once('Conexion.php'); ?>
 <?php
 $currentPage = $_SERVER["PHP_SELF"];
@@ -46,7 +48,7 @@ $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recor
 <br><br>
 <div id="main-container">
 <?php
- echo "<a class='btn_1' title='Nuevo Historial' target='medio02' href='New_his.php?No=".$row_Recordset1["No"]." & Codigo=".$row_Recordset1["Codigo"]." & Empresa=".$row_Recordset1["Empresa"]."'>Nuevo Historial</a>";
+ echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='btn_1' title='Nuevo Historial' target='medio02' href='New_his.php?No=".$row_Recordset1["No"]." & Codigo=".$row_Recordset1["Codigo"]." & Empresa=".$row_Recordset1["Empresa"]."'>Nuevo Historial</a></td";
 ?>
 <br><br><br>
 <center><h1>RESULTADO DE LA CONSULTA</h1></center>
