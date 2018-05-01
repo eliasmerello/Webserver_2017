@@ -3,8 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" href="/Mis_estilos_CSS/factura.css"> 
-<link rel="stylesheet" href="/Mis_estilos_CSS/Font/btn.css"> 
-<link rel="stylesheet" href="/Mis_estilos_CSS/Agenda/form-contact.css"> 
 
 
 <title>Crear Factura</title>
@@ -55,39 +53,40 @@ caja["total"].value=subtotal+iva;
 
 
 <form id="form1" name="form1" method="post" action="generar_fact.php">
+  
+<div class="encabezado">
+<h2>GBSYS S.A</h2>
+</div><br>
+
+<div class="bordes">
 <table>
-  <h1>GBSYS S.A</h1><br><br>
 	  <tr>
-        <td>Cliente(s):</td>
+        <td>Cliente:</td>
         <td><input name="nombres" type="text" class="caja-texto" maxlength="30" autofocus /></td>
         <td>Direcci&oacute;n:</td>
         <td><input name="direccion" type="text" class="caja-texto" maxlength="60" /></td>
-    
         <td>RUC:</td>
         <td><input name="ruc" type="text" class="caja-texto" maxlength="10" /></td>
-    
-        <td>C&oacute;digo:</td>
-        <td><input name="codigo" type="text" class="caja-texto"  maxlength="3" /></td>
-      </tr>
-   
-    <tr>
-        <td>N&uacute;mero_Factura:</td>
-        <td><input name="factura" type="text" class="caja-texto" maxlength="6" /></td>
-    
-        <td>Fecha:</td>
-        <td><input type="date" class="caja-texto" name="fecha" /> </td>
-    
-        <td>Ciudad:</td>
-        <td><input name="ciudad" type="text" class="caja-texto" maxlength="10" /></td>
-  
-        <td>Telef&oacute;no:</td>
-        <td><input name="fijo" type="text" class="caja-texto" maxlength="10" /></td>
     </tr>
   
     <tr>
+        <td>C&oacute;digo:</td>
+        <td><input name="codigo" type="text" class="caja-texto"  maxlength="3" /></td>
+        <td>N&uacute;mero_Factura:</td>
+        <td><input name="factura" type="text" class="caja-texto" maxlength="6" /></td>
+        <td>Fecha:</td>
+        <td><input type="date" class="caja-texto" name="fecha" /> </td>
+    </tr>
+  
+    <tr>
+        <td>Ciudad:</td>
+        <td><input name="ciudad" type="text" class="caja-texto" maxlength="10" /></td>
+        <td>Telef&oacute;no:</td>
+        <td><input name="fijo" type="text" class="caja-texto" maxlength="10" /></td>
         <td>Operadora:</td>
         <td>
 	        <select name="ope" size="1" id="ope" class="caja-texto">
+            <option value=" ">Seleccione...</option>
             <option value="Claro">Claro</option>
             <option value="Movistar">Movistar</option>
             <option value="Twenty">Twenty</option>
@@ -95,77 +94,88 @@ caja["total"].value=subtotal+iva;
             <option value="Otra">Otra</option>
           </select>
 	     </td>
-	
+	  </tr>
+    <tr>
        <td>N&uacute;mero:</td>
        <td><input name="num" type="text" class="caja-texto" maxlength="10"/></td>
-  
        <td>Vendedor de producto/Servicio:</td>
        <td><input name="vendedor" type="text" class="caja-texto" maxlength="50" /></td>
-  
        <td>E-mail:</td>
        <td><input name="mail" type="text" class="caja-texto" maxlength="40" /></td>
     </tr>
-
+  </table>
+</div>
+<br>
+<div class="bordes">
 <table>
 <thead>
   <tr>
-    <td><strong><h1>Cantidad</h1></strong></td>
-    <td><strong><h1>Servicio/Producto</h1></strong></td>
-    <td><strong><h1>Valor Unitario</h1></strong></td>
-    <td><strong><h1>Valor</strong></h1></td>  
+    <td><h1>Cantidad</h1></td>
+    <td><h1>Servicio/Producto</h1></td>
+    <td><h1>Valor Unitario</h1></td>
+    <td><h1>Valor</h1></td>  
   </tr>
-</thead><br>
+</thead>
+
   <tr>
     <td><input name="cantidad" type="text" class="caja-texto" id="cant1"  maxlength="3" autofocus onkeyup="fncMultiplicar()" /></td>
-    <td><input name="servicio" type="text" class="caja-texto" id="ser1" size="40" maxlength="30" autofocus /></td>
+    <td><input name="servicio" type="text" class="caja-texto" id="ser1" size="44" maxlength="50" autofocus /></td>
     <td><input name="valoru" type="text" class="caja-texto" id="valu1"  maxlength="30" placeholder="$" autofocus onkeyup="fncMultiplicar()" /></td>
     <td><input name="valor" type="text" class="caja-texto" id="val1"  maxlength="30" placeholder="$" autofocus /></td>
   </tr>
 
   <tr>
     <td><input name="cantidad1" type="text" class="caja-texto" id="cant1"  maxlength="30" autofocus onkeyup="fncMultiplicar()" /></td>
-    <td><input name="servicio1" type="text" class="caja-texto" id="ser1" size="40" maxlength="30" autofocus /></td>
+    <td><input name="servicio1" type="text" class="caja-texto" id="ser1" size="44" maxlength="30" autofocus /></td>
     <td><input name="valoru1" type="text" class="caja-texto" id="valu1"  maxlength="30" placeholder="$" autofocus onkeyup="fncMultiplicar()" /></td>
     <td><input name="valor1" type="text" class="caja-texto" id="val1"  maxlength="30" placeholder="$" autofocus /></td>
   </tr>
 
   <tr>
     <td><input name="cantidad2" type="text" class="caja-texto" id="cant2"  maxlength="30" autofocus onkeyup="fncMultiplicar()" /></td>
-    <td><input name="servicio2" type="text" class="caja-texto" id="ser2" size="40" maxlength="30" autofocus /></td>
+    <td><input name="servicio2" type="text" class="caja-texto" id="ser2" size="44" maxlength="30" autofocus /></td>
     <td><input name="valoru2" type="text" class="caja-texto" id="valu2"  maxlength="30" placeholder="$" autofocus onkeyup="fncMultiplicar()" /></td>
     <td><input name="valor2" type="text" class="caja-texto" id="val2"  maxlength="30" placeholder="$" autofocus /></td>
   </tr>
 
   <tr>
     <td><input name="cantidad3" type="text" class="caja-texto" id="cant3"  maxlength="30" autofocus onkeyup="fncMultiplicar()" /></td>
-    <td><input name="servicio3" type="text" class="caja-texto" id="ser3" size="40" maxlength="30" autofocus /></td>
+    <td><input name="servicio3" type="text" class="caja-texto" id="ser3" size="44" maxlength="30" autofocus /></td>
     <td><input name="valoru3" type="text" class="caja-texto" id="valu3"  maxlength="30" placeholder="$" autofocus onkeyup="fncMultiplicar()" /></td>
     <td><input name="valor3" type="text" class="caja-texto" id="val3"  maxlength="30" placeholder="$" autofocus /></td>
   </tr>
+</table> 
+
+<br>
+<table>
 <thead>
     <tr>
-      <td><strong><h1>Subtotal:</h1></strong></td>
-      <td><input name="subtotal" type="text" class="caja-texto" id="sub"  maxlength="30" placeholder="$" onkeyup="fncCalcular1()" autofocus />
+      <td><h1>Subtotal:</h1></td>
+      <td><input name="subtotal" type="text" class="caja-texto" id="sub"  maxlength="10" placeholder="$" onkeyup="fncCalcular1()" autofocus />
       </td>
      </tr>
+
     <tr>    
-      <td><strong><h1>IVA 12%:</h1></strong></td>
-      <td><input name="iva" type="text" class="caja-texto" id="iv" maxlength="30" placeholder="$" autofocus onkeyup="fncCalcular1()" />
+      <td><h1>IVA 12%:</h1></td>
+      <td><input name="iva" type="text" class="caja-texto" id="iv" maxlength="8" placeholder="$" autofocus onkeyup="fncCalcular1()" />
       </td>
     </tr>
+
     <tr>
-      <td><strong><h1>Total US:</h1></strong></td>   
-      <td><input name="total" type="text" class="caja-texto" id="tot"  maxlength="30" placeholder="$" autofocus onkeyup="fncCalcular1()" />
+      <td><h1>Total US:</h1></td>   
+      <td><input name="total" type="text" class="caja-texto" id="tot"  maxlength="10" placeholder="$" autofocus onkeyup="fncCalcular1()" />
       </td>
     </tr>
  </thead> 
-    
 </table><br>
+</div>
+<br>
+
     <tr>
-        <td><input name="btn_Guardar" class="caja-texto" type="submit" id="btn_Guardar" value="Crear Factura" /></td>
-        <td><input name="btn_Limpiar" class="caja-texto" type="reset" id="btn_Limpiar" value="Borrar" /></td>
+        <td><input name="btn_Guardar" class="btnCrear" type="submit" id="btn_Guardar" value="Crear Factura" /></td>
+        <td><input name="btn_Limpiar" class="btnCrear" type="reset" id="btn_Limpiar" value="Borrar" /></td>
     </tr>
-</table><br>
+
 </form>
 </body>
 </html>

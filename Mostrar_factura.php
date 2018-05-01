@@ -1,8 +1,5 @@
 <meta http-equiv="Content-Type" content="text/html; charset= ISO-8859-1" />
-<link rel="stylesheet" href="/Mis_estilos_CSS/Tablas_1.css"> 
-<link rel="stylesheet" href="/Mis_estilos_CSS/Font/font.css"> 
-<link rel="stylesheet" href="/Mis_estilos_CSS/Agenda/form-contact.css"> 
-
+<link rel="stylesheet" href="/Mis_estilos_CSS/MostrarFact.css"> 
 
 <?php
 session_start();
@@ -64,51 +61,64 @@ if (!empty($_SERVER['QUERY_STRING'])) {
 $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recordset1, $queryString_Recordset1);
 ?>
 
+
+<div class="encabezado">
+<h2>GBSYS S.A</h2>
+</div><br>
+
+<div class="bordes">
 <table>
-  <?php echo"<h1>N&#176; Factura:" . $row_Recordset1['Factura_Num']; ?>
- <thead>
+<?php echo"<h1>N&#176; Factura:" . $row_Recordset1['Factura_Num']; ?>
+
   <?php do { ?>
   <tr>
-  <td>Id</td>
-  <td>Cliente(s):</td>
-  <td>Direcci&oacute;n</td>
-  <td>RUC</td>
-  <td>Codigo</td>
-  <td>Factura</td>
-  <td>Fecha</td>
-  <td>Ciudad</td>
-  <td>Fijo</td>
-  <td>Operadora</td>
-  <td>N&uacute;mero</td>
-  <td>Vendedor</td>
-  <td>E-Mail</td>
+    <td>Cliente:</td>    
+    <td><input type="text" class="caja-texto"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Cliente']; ?>"/></td>
+    <td>Direcci&oacute;n</td>
+    <td><input type="text" class="caja-texto"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Direccion']; ?>"/></td>
+    <td>RUC</td>
+    <td><input type="text" class="caja-texto"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Ruc']; ?>"/></td>
   </tr>
-  </thead>
-  
-  <td><?php echo $row_Recordset1['Id']; ?></td>
-  <td><?php echo $row_Recordset1['Cliente']; ?></td>
-  <td><?php echo $row_Recordset1['Direccion']; ?></td>
-  <td><?php echo $row_Recordset1['Ruc']; ?></td>
-  <td><?php echo $row_Recordset1['Codigo']; ?></td>
-  <td><?php echo $row_Recordset1['Factura_Num']; ?></td>
-  <td><?php echo $row_Recordset1['Fecha']; ?> </td>
-  <td><?php echo $row_Recordset1['Ciudad']; ?> </td>
-  <td><?php echo $row_Recordset1['Fijo']; ?> </td>
-  <td><?php echo $row_Recordset1['Operadora']; ?></td>
-  <td><?php echo $row_Recordset1['Numero']; ?> </td>
-  <td><?php echo $row_Recordset1['Vendedor']; ?> </td>
-  <td><?php echo $row_Recordset1['Mail']; ?> </td>
+
+<tr>
+  <td>Codigo</td>
+  <td><input type="text" class="caja-texto"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Codigo']; ?>"/></td>
+  <td>Factura</td>
+  <td><input type="text" class="caja-texto"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Factura_Num']; ?>"/></td>
+  <td>Fecha</td>
+  <td><input type="text" class="caja-texto"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Fecha']; ?>"/></td>
+</tr>
+
+<tr>
+  <td>Ciudad</td>
+  <td><input type="text" class="caja-texto"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Ciudad']; ?>"/></td>
+  <td>Fijo</td>
+  <td><input type="text" class="caja-texto"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Fijo']; ?>"/></td>
+  <td>Operadora</td>
+  <td><input type="text" class="caja-texto"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Operadora']; ?>"/></td>
+</tr>
+
+<tr>
+  <td>N&uacute;mero</td>
+  <td><input type="text" class="caja-texto"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Numero']; ?>"/></td>
+  <td>Vendedor de producto/Servicio:</td>
+  <td><input type="text" class="caja-texto"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Vendedor']; ?>"/></td>
+  <td>E-Mail</td>
+  <td><input type="text" class="caja-texto"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Mail']; ?>"/></td>
+</tr>
  </table>
- 
+</div>
+<br> 
+<div class="bordes">
  <table>
  <thead>
  <tr>
-    <td><strong>Cantidad</strong></td>
-    <td><strong>Servicio/Producto</strong></td>
-    <td><strong>Valor Unitario</strong></td>
-    <td><strong>Valor</strong></td>  
+    <td><h1>Cantidad</h1</td>
+    <td><h1>Servicio/Producto</h1></td>
+    <td><h1>Valor Unitario</h1></td>
+    <td><h1>Valor</strong></h1>  
   </tr>
-
+</thead>
  <tr>
     <td><input name="cantidad" type="text" class="caja-texto" id="cant" maxlength="30" autofocus value="<?php echo $row_Recordset1['Cantidad']; ?>"/></td>
     <td><input name="servicio" type="text" class="caja-texto" id="ser" size="40"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Servicio']; ?> "/></td>
@@ -136,34 +146,34 @@ $queryString_Recordset1 = sprintf("&totalRows_Recordset1=%d%s", $totalRows_Recor
   <td><input name="valoru3" type="text" class="caja-texto" id="valu3"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor_Uni3']; ?>" /></td>
   <td><input name="valor3" type="text" class="caja-texto" id="val3"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Valor3']; ?>" /></td>
 </tr>
+</table>
+<br>
+
+<table>
 <thead>
 <tr>
-<td><strong>Subtotal:</strong></td>
-</tr> 
-    
-<tr>
+<td><h1>Subtotal:</h1></td>
 <td><input name="subtotal" type="text" class="caja-texto" id="sub"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Subtotal']; ?>" />
 </td>
 </tr>
 
 <tr>
-<td><strong>IVA 12%:</strong></td>
-</tr>
-    
-<tr>
+<td><h1>IVA 12%:</h1></td>
 <td><input name="iva" type="text" class="caja-texto" id="iv" maxlength="30" autofocus value="<?php echo $row_Recordset1['Iva']; ?>" />
 </td>
 </tr>
 
 <tr>
-<td><strong>Total US:</strong></td>
-</tr>
-<tr>
+<td><h1>Total US:</h1></td>
 <td><input name="total" type="text" class="caja-texto" id="tot"  maxlength="30" autofocus value="<?php echo $row_Recordset1['Total']; ?>" />
 </td>
 </tr>
-<?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
+
 </table> 
+</div>
+<br>
+<?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
+
 <table>
   <tr>    
     <td><?php if ($pageNum_Recordset1 > 0) { // Show if not first page ?>
